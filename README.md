@@ -1,4 +1,3 @@
-```markdown
 # Sovereign AI
 
 Private AI infrastructure. Community-owned. Open source. Your data, your control.
@@ -39,15 +38,16 @@ Revenue covers operational costs. Any surplus is reinvested in expanding capacit
 
 ## Financing: €30,000 (First Year)
 
-Hardware:              €8,500  (28%)
-Hosting:                €4,500  (15%)
-Operations:             €3,500  (12%)
-Legal:                  €2,000  (7%)
-Development:            €1,500  (5%)
-Marketing:              €2,000  (7%)
-Contingency (26%):      €8,000  (26%)
-──────────────────────────────
-TOTAL:                 €30,000
+| Item | Amount | % |
+|---|---|---|
+| Hardware (GPUs, servers) | €8,500 | 28% |
+| Hosting / colocation | €4,500 | 15% |
+| Electricity + operations | €3,500 | 12% |
+| Legal / accounting | €2,000 | 7% |
+| Platform development | €1,500 | 5% |
+| Marketing / community | €2,000 | 7% |
+| Contingency | €8,000 | 26% |
+| **Total** | **€30,000** | |
 
 ---
 
@@ -108,16 +108,16 @@ TOTAL:                 €30,000
 
 ## What We Need From You
 
-**€25 - €500:** Early supporter
+**€25 - €500: Early supporter**
 - Name on the public contributor list
 - Lifetime discount on the platform
 
-**€500 - €2,000:** Founding member
+**€500 - €2,000: Founding member**
 - All of the above
 - Voice in monthly community decisions
 - Priority access to new models
 
-**€2,000+:** Stakeholder
+**€2,000+: Stakeholder**
 - All of the above
 - Seat in governance
 
@@ -155,6 +155,10 @@ This is not a startup pitch. This is infrastructure.
 We're not trying to get rich. We're trying to not depend on them.
 
 ---
+
+**Join us.**
+
+[Open Collective](https://opencollective.com/sovereign-ai)
 
 **Join us.**
 
