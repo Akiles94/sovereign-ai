@@ -1,0 +1,12 @@
+{
+  "git": {
+    "author": {
+      "name": "Óscar Viñueza",
+      "email": "osvinueza94@gmail.com"
+    }
+  },
+  "branch_naming": {
+    "convention": "no-claude-prefix",
+    "note": "Use descriptive names without 'claude/' prefix. Examples: feature/x, docs/x, fix/x"
+  }
+}
