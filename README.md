@@ -125,7 +125,7 @@ Revenue covers operational costs. Any surplus is reinvested in expanding capacit
 
 ## How to Contribute
 
-**Open Collective:** [Link coming soon — being set up]
+**Open Collective:** https://opencollective.com/sovereign-ai
 
 **GitHub:** Watch this repo for updates
 
@@ -160,6 +160,3 @@ We're not trying to get rich. We're trying to not depend on them.
 
 [Open Collective](https://opencollective.com/sovereign-ai)
 
-**Join us.**
-
-[Open Collective link](https://opencollective.com/sovereign-ai)
