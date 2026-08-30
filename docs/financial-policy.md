@@ -174,7 +174,7 @@ Timeline:
 
 ### Política General
 
-1. **Fundador (Oscar Viñueza):**
+1. **Fundador (Oscar Vinueza):**
    - **Fase 1 (Pre-recaudación completa):** Sin salario (trabajo voluntary)
    - **Fase 2 (Post-recaudación):** €500/mes (comenzará una vez se alcance objetivo de €30k)
    - **Fase 3 (Retroactivo):** Si proyecto llega a rentabilidad, se pagará retroactivamente TODO el trabajo realizado (desde inicio) basado en:

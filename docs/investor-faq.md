@@ -12,7 +12,7 @@
 3. **Conciencia:** Escándalos de retención de datos en proveedores centralizados
 
 ### P: ¿Quién lo está haciendo?
-**R:** Oscar Viñueza (founder), con ayuda de la comunidad. Startup side-project (full-time day job también).
+**R:** Oscar Vinueza (founder), con ayuda de la comunidad. Startup side-project (full-time day job también).
 
 ---
 
@@ -153,16 +153,25 @@ Documentación completa en `/docs/security.md`
 | Stakeholder | Asiento en consejo + veto en decisiones mayores |
 
 ### P: ¿Puede el founder tomar decisiones sin mí?
-**R:** 
+**R:** Depende del tipo de decisión:
 
+**Reservadas al founder (sin votación):**
+- Dirección técnica, arquitectura, tecnologías
+- Contratación de equipo
+- Roadmap de producto (qué features, cuándo)
+
+**Requieren votación comunitaria:**
 | Decisión | Quién aprueba |
 |----------|--------------|
 | Gastos <€1k | Founder + team |
 | Gastos €1k-€10k | Votación de Founding Members + Stakeholders |
 | Gastos >€10k | Asamblea general (todos) |
-| Cambios fundamentales | Asamblea general |
+| Cambios de gobernanza | Asamblea general |
+| Pricing de la API | Asamblea general (propuesta del founder) |
 
-Founder puede mover rápido en pequeñas cosas, pero decisiones importantes requieren comunidad.
+**Además**, el founder mantiene un peso mínimo garantizado del 25% del voto total (no diluible) y veto en decisiones existenciales (venta a VC, conversión a for-profit, liquidación no autorizada). Detalle completo en `/docs/governance.md`.
+
+**Por qué:** El proyecto necesita velocidad de ejecución técnica y protección contra desvíos de su misión original, sin dejar de ser una comunidad que controla el dinero y la dirección estratégica.
 
 ### P: ¿Qué pasa si me decepcionan las decisiones?
 **R:** Opciones:
@@ -171,10 +180,12 @@ Founder puede mover rápido en pequeñas cosas, pero decisiones importantes requ
 3. **Exit:** Si realmente no estás de acuerdo, puedes dejar de usar (aunque tu descuento es lifetime)
 
 ### P: ¿Puede el founder hacerse rico con esto?
-**R:** Teóricamente no:
-- Salary capped en presupuesto aprobado (€500/mes Año 1)
-- Votación comunitaria si quiere raise
-- Si proyecto crece, la riqueza se distribuye en infraestructura (beneficia a todos), no pockets personales
+**R:** No es el diseño:
+- Sin salario hasta alcanzar objetivo de recaudación (€30k)
+- Después: €500/mes, fijo
+- Pago retroactivo por trabajo previo **solo si el proyecto llega a ser rentable**, calculado según rol/responsabilidades, sin ser desproporcionado, y siempre preservando el funcionamiento del proyecto
+- Cambios a su propia compensación retroactiva requieren su propio consentimiento (parte de sus protecciones de veto), pero no puede subírsela unilateralmente — el Consejo la aprueba
+- Si proyecto crece, la mayoría del excedente se reinvierte en infraestructura (beneficia a todos), no en compensación personal
 
 ---
 

@@ -67,17 +67,90 @@ COMUNIDAD DE INVERSORES
   - Fine-tuning gratuito 1x/año
   - **Voto:** 1 voto + participación activa en consejo
 
-### **Founder: Oscar Viñueza**
-- **Derechos especiales:**
-  - Propuesta de decisiones (sin veto)
-  - **Voto ponderado:** 2 votos (double-weight en decisiones)
-  - Asiento permanente en Consejo (no rotatorio)
-  - Responsabilidad ejecutiva
-- **Razonamiento:** Iniciador del proyecto, full-time commitment, responsabilidad operativa
+### **Founder: Oscar Vinueza**
+
+El founder tiene un estatus especial, distinto a los tiers de inversión, descrito en detalle en la sección **"Protecciones del Founder"** más abajo. Resumen:
+
+- **Voto:** Peso mínimo garantizado del 25% del total (ver detalle abajo)
+- **Veto:** En decisiones existenciales (venta a VC, cambio a for-profit, liquidación no autorizada, cambios retroactivos a su compensación)
+- **Decisiones reservadas:** Dirección técnica, contratación de equipo, roadmap de producto
+- **Asiento permanente en Consejo** (no rotatorio, no requiere reelección)
+- **Duración:** Indefinida mientras sea Founder Activo (ver definición abajo)
+
+---
+
+## Protecciones del Founder (Oscar Vinueza)
+
+Estas protecciones existen para garantizar que el proyecto no pueda ser desviado de su misión original (privacidad, propiedad comunitaria, sostenibilidad) por dilución de voto a medida que crece la comunidad, ni por una mayoría circunstancial que decida cambiar su naturaleza fundamental. Son indefinidas mientras Oscar sea **Founder Activo**.
+
+### 1. Veto en Decisiones Existenciales
+
+El founder puede bloquear unilateralmente, sin necesidad de justificar ante votación:
+
+- Venta o transferencia de la infraestructura/marca a inversores de capital riesgo (VC) u otra entidad con ánimo de lucro
+- Conversión de la asociación de nonprofit a entidad con ánimo de lucro
+- Liquidación o disolución no autorizada por el proceso formal de `/docs/governance.md`
+- Cambios retroactivos a compensación del founder ya aprobada previamente por el Consejo
+- Cambios que alteren los principios fundacionales (privacidad por diseño, propiedad comunitaria, transparencia radical)
+
+Este veto **no tiene mecanismo de override** por votación ordinaria ni supermayoría — es la salvaguarda más fuerte del proyecto. La única vía para remover esta protección es si el founder deja de ser **Founder Activo** (ver abajo).
+
+### 2. Porcentaje Mínimo Garantizado de Voto
+
+En toda Asamblea General y votación del Consejo, el voto del founder se calcula así:
+
+```
+Peso del founder = MAX(2 votos individuales, 25% del total de votos emitidos)
+```
+
+Esto significa que, sin importar cuántos Early Supporters, Founding Members o Stakeholders se sumen, el founder **nunca cae por debajo del 25% del poder de voto total**. Es un porcentaje recalculado dinámicamente en cada votación, no una cantidad fija de votos.
+
+**Ejemplo:**
+- Si hay 100 votos de comunidad + founder → founder efectivamente vota 33 puntos (25% de 133 totales), no solo 2
+- Si hay 6 votos de comunidad + founder → founder tiene 2 votos (mínimo base), que ya supera 25%
+
+### 3. Decisiones Reservadas al Founder
+
+Ciertas categorías se deciden directamente por el founder, sin pasar por votación comunitaria (aunque se comunican con transparencia al Consejo):
+
+| Categoría | Decide | Comunidad vota |
+|-----------|--------|-----------------|
+| Dirección técnica / arquitectura | ✅ Founder | ❌ |
+| Contratación de equipo técnico/operativo | ✅ Founder | ❌ |
+| Roadmap de producto (features, priorización) | ✅ Founder | ❌ |
+| Selección de tecnologías | ✅ Founder | ❌ |
+| Presupuesto y gastos | ❌ | ✅ Comunidad (ver Proceso Decisorio) |
+| Cambios de gobernanza | ❌ | ✅ Comunidad |
+| Pricing de la API | ❌ | ✅ Comunidad (con propuesta del founder) |
+| Expansión (segundo datacenter, etc.) | ❌ | ✅ Comunidad |
+
+**Razonamiento:** El founder mantiene control ejecutivo sobre "cómo se construye" el producto; la comunidad controla "cómo se gasta el dinero" y "hacia dónde va el proyecto" a nivel estratégico.
+
+### 4. Cláusula de Salida / Fork
+
+Si la Asamblea General vota (incluso por supermayoría) una decisión que el founder considera traiciona la misión fundacional, el founder tiene derecho a:
+
+- **Fork:** Continuar el proyecto de forma independiente bajo nueva entidad, usando el código (ya open source) y la marca alternativa
+- **Recompra:** Derecho de primera opción para recomprar el control completo de la infraestructura a valoración justa (tasación independiente), antes de que se ejecute la decisión de la Asamblea
+
+Esto no es un boicot al voto comunitario — la comunidad puede votar lo que considere correcto — pero garantiza que el founder no queda atrapado financiando/operando un proyecto que ya no refleja su visión original.
+
+### Definición de "Founder Activo"
+
+Estas protecciones aplican **indefinidamente** mientras Oscar sea Founder Activo, definido como:
+
+- Participa en el Consejo Comunitario (asiste o delega explícitamente)
+- Responde a comunicaciones críticas en un plazo razonable (~30 días)
+- No ha renunciado voluntariamente ni delegado el rol a un sucesor
+- No está legalmente incapacitado de forma permanente
+
+Si Oscar deja de cumplir esta definición por un período prolongado (12+ meses sin actividad ni sucesor designado), el Consejo puede iniciar una revisión de estas protecciones — pero **solo por esta causa específica de inactividad**, nunca para diluir el control del founder mientras esté activo.
 
 ---
 
 ## Proceso Decisorio
+
+> **Nota:** Las decisiones técnicas, de producto y de contratación están reservadas al founder (ver "Protecciones del Founder"). Este proceso decisorio aplica a presupuesto, gastos y gobernanza.
 
 ### **Decisiones Menores** (<€1k de impacto)
 - **Quién:** Founder + Working group relevante
@@ -160,20 +233,16 @@ COMUNIDAD DE INVERSORES
 
 ### Sistema de Pesos de Votación
 
-| Tier | Votos | Peso | Ejemplo |
-|------|-------|------|---------|
-| Early Supporter | 1 voto | 1x | 1 voto = 1 punto |
-| Founding Member | 1 voto | 1x | 1 voto = 1 punto |
-| Stakeholder | 1 voto | 1x | 1 voto = 1 punto |
-| **Founder (Oscar)** | **1 voto** | **2x** | **1 voto = 2 puntos** |
+| Tier | Votos |
+|------|-------|
+| Early Supporter | 1 voto |
+| Founding Member | 1 voto |
+| Stakeholder | 1 voto |
+| **Founder (Oscar)** | **MAX(2 votos, 25% del total)** — ver "Protecciones del Founder" |
 
-**Criterio:** El founder tiene doble peso debido a:
-- Iniciativa y responsabilidad ejecutiva
-- Full-time commitment desde inicio
-- Responsabilidad operativa del proyecto
-- Experiencia técnica y vision
+**Criterio:** El founder mantiene mínimo 25% del poder de voto total, permanentemente, para evitar dilución a medida que crece la comunidad. Detalle completo en la sección "Protecciones del Founder" arriba.
 
-*Nota: Sistema flexible, puede ajustarse en Asamblea General si comunidad lo vota.*
+*Nota: El porcentaje mínimo del founder (25%) NO es ajustable por votación ordinaria — ver cláusula de veto en Protecciones del Founder.*
 
 ---
 
