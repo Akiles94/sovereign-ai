@@ -32,9 +32,16 @@ jobs:
               sections[heading] = value;
             }
 
-            const name = (sections["Nombre completo"] || "").replace(/^_No response_$/i, "");
-            const linkedin = (sections["URL de tu perfil de LinkedIn"] || "").replace(/^_No response_$/i, "");
-            const message = (sections["Mensaje de apoyo (opcional)"] || "").replace(/^_No response_$/i, "");
+            const pick = (...keys) => {
+              for (const key of keys) {
+                if (sections[key]) return sections[key];
+              }
+              return "";
+            };
+
+            const name = pick("Full name", "Nombre completo").replace(/^_No response_$/i, "");
+            const linkedin = pick("LinkedIn profile URL", "URL de tu perfil de LinkedIn").replace(/^_No response_$/i, "");
+            const message = pick("Support message (optional)", "Mensaje de apoyo (opcional)").replace(/^_No response_$/i, "");
 
             core.setOutput("name", name);
             core.setOutput("linkedin", linkedin);
@@ -68,7 +75,7 @@ jobs:
               owner: context.repo.owner,
               repo: context.repo.repo,
               issue_number: context.payload.issue.number,
-              body: "¡Gracias por tu apoyo! Tu firma ya aparece en la [lista pública de firmantes](https://akiles94.github.io/sovereign-ai/sign.html).",
+              body: "Thanks for your support! Your signature is now on the [public list of supporters](https://akiles94.github.io/sovereign-ai/sign.html).\n\n¡Gracias por tu apoyo! Tu firma ya aparece en la [lista pública de firmantes](https://akiles94.github.io/sovereign-ai/sign.html).",
             });
             await github.rest.issues.update({
               owner: context.repo.owner,

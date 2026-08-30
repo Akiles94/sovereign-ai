@@ -23,7 +23,7 @@ En este momento, Sovereign AI está en **Fase 1: Fundación**. El proyecto aún 
 
 Ver `/docs/investment-tiers.md` para detalles completos.
 
-**¿Te gusta la idea pero no puedes/quieres aportar dinero?** Puedes [firmar la iniciativa](https://akiles94.github.io/sovereign-ai/sign.html) con tu nombre y perfil de LinkedIn — es gratis y muestra apoyo público sin compromiso económico. Se hace vía [GitHub Issue](https://github.com/akiles94/sovereign-ai/issues/new?template=sign-initiative.yml) y un mantenedor la aprueba antes de publicarla.
+**¿Te gusta la idea pero no puedes/quieres aportar dinero?** Puedes [firmar la iniciativa](https://akiles94.github.io/sovereign-ai/sign.html) con tu nombre y perfil de LinkedIn — es gratis y muestra apoyo público sin compromiso económico. Se hace vía GitHub Issue ([English](https://github.com/akiles94/sovereign-ai/issues/new?template=01-sign-initiative.yml) / [español](https://github.com/akiles94/sovereign-ai/issues/new?template=02-sign-initiative-es.yml)) y un mantenedor la aprueba antes de publicarla.
 
 ### 2. **Feedback & Ideas** (AHORA DISPONIBLE)
 
