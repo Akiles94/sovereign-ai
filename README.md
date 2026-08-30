@@ -127,6 +127,8 @@ Revenue covers operational costs. Any surplus is reinvested in expanding capacit
 
 **Open Collective:** https://opencollective.com/sovereign-ai
 
+**Support without money:** Not ready to contribute financially but like the idea? [Sign the initiative](https://akiles94.github.io/sovereign-ai/sign.html) — your name and LinkedIn profile go on the public list of supporters.
+
 **GitHub:** Watch this repo for updates
 
 **Discord:** [Link coming soon] — community discussions

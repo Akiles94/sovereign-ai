@@ -1,0 +1,79 @@
+name: Approve signature
+
+on:
+  issues:
+    types: [labeled]
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  add-signature:
+    if: >-
+      github.event.label.name == 'approved' &&
+      contains(github.event.issue.labels.*.name, 'signature')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Extract signature from issue body
+        id: extract
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const body = context.payload.issue.body || "";
+            const sections = {};
+            const parts = body.split(/\n### /);
+            for (const part of parts) {
+              const lines = part.replace(/^### /, "").split("\n");
+              const heading = lines[0].trim();
+              const value = lines.slice(1).join("\n").trim();
+              sections[heading] = value;
+            }
+
+            const name = (sections["Nombre completo"] || "").replace(/^_No response_$/i, "");
+            const linkedin = (sections["URL de tu perfil de LinkedIn"] || "").replace(/^_No response_$/i, "");
+            const message = (sections["Mensaje de apoyo (opcional)"] || "").replace(/^_No response_$/i, "");
+
+            core.setOutput("name", name);
+            core.setOutput("linkedin", linkedin);
+            core.setOutput("message", message);
+
+      - name: Append to signatories.json
+        env:
+          SIG_NAME: ${{ steps.extract.outputs.name }}
+          SIG_LINKEDIN: ${{ steps.extract.outputs.linkedin }}
+          SIG_MESSAGE: ${{ steps.extract.outputs.message }}
+          SIG_ISSUE: ${{ github.event.issue.number }}
+        run: node .github/scripts/add-signatory.js
+
+      - name: Commit and push
+        run: |
+          git config user.name "sovereign-ai-bot"
+          git config user.email "actions@github.com"
+          git add docs/data/signatories.json
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+          git commit -m "Add signature from issue #${{ github.event.issue.number }}"
+          git push
+
+      - name: Reply and close issue
+        uses: actions/github-script@v7
+        with:
+          script: |
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.payload.issue.number,
+              body: "¡Gracias por tu apoyo! Tu firma ya aparece en la [lista pública de firmantes](https://akiles94.github.io/sovereign-ai/sign.html).",
+            });
+            await github.rest.issues.update({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.payload.issue.number,
+              state: "closed",
+              state_reason: "completed",
+            });
