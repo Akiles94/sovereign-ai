@@ -1,0 +1,41 @@
+name: "🤝 Sign the initiative"
+description: "Show your support for Sovereign AI without a financial contribution"
+title: "[Signature] "
+labels: ["signature"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for supporting Sovereign AI. Fill in these details and a maintainer will review your signature before it's published on the public list of supporters.
+
+        _¿Prefieres español? Usa la plantilla "Firmar la iniciativa" en su lugar._
+  - type: input
+    id: name
+    attributes:
+      label: Full name
+      description: How you want to appear on the public list of supporters
+      placeholder: "Jane Doe"
+    validations:
+      required: true
+  - type: input
+    id: linkedin
+    attributes:
+      label: LinkedIn profile URL
+      description: Must be a public linkedin.com/in/... URL
+      placeholder: "https://www.linkedin.com/in/janedoe"
+    validations:
+      required: true
+  - type: textarea
+    id: message
+    attributes:
+      label: Support message (optional)
+      description: A short line on why you support the initiative
+    validations:
+      required: false
+  - type: checkboxes
+    id: consent
+    attributes:
+      label: Consent
+      options:
+        - label: I authorize my name and LinkedIn profile link to be published on the Sovereign AI public list of supporters
+          required: true

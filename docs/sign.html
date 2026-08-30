@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="es">
+<html lang="en">
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Firmantes — Sovereign AI</title>
+<title>Supporters — Sovereign AI</title>
 <style>
   :root {
     color-scheme: light dark;
@@ -102,18 +102,18 @@
 </head>
 <body>
 <main>
-  <h1>Firmantes de Sovereign AI</h1>
+  <h1>Sovereign AI supporters</h1>
   <p class="lead">
-    Personas que apoyan la iniciativa sin necesariamente aportar dinero.
-    ¿Quieres unirte? <a href="https://github.com/akiles94/sovereign-ai/issues/new?template=sign-initiative.yml">Firma aquí</a>.
+    People who back the initiative without necessarily contributing money.
+    Want to join? <a href="https://github.com/akiles94/sovereign-ai/issues/new?template=01-sign-initiative.yml">Sign here</a> (<a href="https://github.com/akiles94/sovereign-ai/issues/new?template=02-sign-initiative-es.yml">en español</a>).
   </p>
 
   <div class="counter">
     <strong id="count">—</strong>
-    <span>personas han firmado</span>
+    <span>people have signed</span>
   </div>
 
-  <a class="cta" href="https://github.com/akiles94/sovereign-ai/issues/new?template=sign-initiative.yml">Firmar la iniciativa</a>
+  <a class="cta" href="https://github.com/akiles94/sovereign-ai/issues/new?template=01-sign-initiative.yml">Sign the initiative</a>
 
   <ul id="list"></ul>
   <p id="status" class="empty"></p>
@@ -133,7 +133,7 @@
       countEl.textContent = data.length;
 
       if (data.length === 0) {
-        statusEl.textContent = "Todavía no hay firmas. ¡Sé el primero!";
+        statusEl.textContent = "No signatures yet. Be the first!";
         return;
       }
 
@@ -159,7 +159,7 @@
       }
     } catch (err) {
       countEl.textContent = "—";
-      statusEl.textContent = "No se pudo cargar la lista de firmantes.";
+      statusEl.textContent = "Could not load the list of supporters.";
       statusEl.className = "error";
     }
   }

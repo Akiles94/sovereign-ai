@@ -7,6 +7,8 @@ body:
     attributes:
       value: |
         Gracias por apoyar Sovereign AI. Rellena estos datos y un mantenedor revisará tu firma antes de publicarla en la lista pública de firmantes.
+
+        _Prefer English? Use the "Sign the initiative" template instead._
   - type: input
     id: name
     attributes:
