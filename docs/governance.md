@@ -76,6 +76,7 @@ El founder tiene un estatus especial, distinto a los tiers de inversión, descri
 - **Decisiones reservadas:** Dirección técnica, contratación de equipo, roadmap de producto
 - **Asiento permanente en Consejo** (no rotatorio, no requiere reelección)
 - **Duración:** Indefinida mientras sea Founder Activo (ver definición abajo)
+- **Límite explícito:** Este poder es defensivo — protege la misión de terceros o mayorías circunstanciales. No le permite al founder cambiar los principios fundacionales, convertir el proyecto a for-profit, o venderlo sin aprobación de mayoría de la comunidad (ver "Límites al Poder del Founder" abajo)
 
 ---
 
@@ -134,6 +135,20 @@ Si la Asamblea General vota (incluso por supermayoría) una decisión que el fou
 - **Recompra:** Derecho de primera opción para recomprar el control completo de la infraestructura a valoración justa (tasación independiente), antes de que se ejecute la decisión de la Asamblea
 
 Esto no es un boicot al voto comunitario — la comunidad puede votar lo que considere correcto — pero garantiza que el founder no queda atrapado financiando/operando un proyecto que ya no refleja su visión original.
+
+### Límites al Poder del Founder — Esto es un Escudo, No una Espada
+
+Todas las protecciones anteriores son **defensivas**: existen para impedir que la comunidad, un tercero, o una mayoría circunstancial desvíen el proyecto de su misión. **No existen para que el founder pueda imponer cambios contra los principios fundacionales por su cuenta.**
+
+Explícitamente, el founder **NO puede**, unilateralmente ni combinando su voto mínimo garantizado, su veto o sus decisiones reservadas:
+
+- Cambiar los principios fundacionales del proyecto (privacidad por diseño, propiedad comunitaria, transparencia radical, sostenibilidad — ver `/docs/vision.md`)
+- Convertir la asociación a entidad con ánimo de lucro
+- Vender o transferir el proyecto a un tercero
+- Eliminar o reducir los derechos de voto y gobernanza de la comunidad
+- Usar las "decisiones reservadas" (dirección técnica, contratación, roadmap) para introducir de facto cambios que alteren la misión (ej. cerrar el código, dejar de ser privacy-first, centralizar el control)
+
+**Cualquier cambio a los principios fundacionales — lo proponga el founder o la comunidad — requiere aprobación de mayoría de la comunidad en Asamblea General.** El veto del founder solo puede usarse para **bloquear** una propuesta que vaya contra la misión; nunca para **aprobar** unilateralmente una que la cambie. Si el founder intentara ir contra los principios fundacionales, la comunidad conserva su voto y su derecho a oponerse — el 25% mínimo garantizado no alcanza para imponer una decisión de este tipo por sí solo.
 
 ### Definición de "Founder Activo"
 

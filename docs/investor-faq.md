@@ -173,6 +173,8 @@ Documentación completa en `/docs/security.md`
 
 **Por qué:** El proyecto necesita velocidad de ejecución técnica y protección contra desvíos de su misión original, sin dejar de ser una comunidad que controla el dinero y la dirección estratégica.
 
+**Importante — este poder es defensivo, no ofensivo:** El founder NO puede usar su voto mínimo, su veto o sus decisiones reservadas para cambiar los principios fundacionales del proyecto (privacidad, propiedad comunitaria, transparencia), convertirlo a for-profit, o venderlo. Cualquier cambio de ese tipo — lo proponga quien lo proponga — requiere aprobación de mayoría de la comunidad en Asamblea General. El veto solo sirve para bloquear desvíos de la misión, nunca para imponerlos.
+
 ### P: ¿Qué pasa si me decepcionan las decisiones?
 **R:** Opciones:
 1. **Debate en Discord:** Defiende tu punto
