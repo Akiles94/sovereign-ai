@@ -26,6 +26,8 @@ A small datacenter running open-weight models (Llama, Qwen). Funded and owned by
 - **Affordable:** Significantly cheaper than OpenAI/Anthropic per token
 - **Yours:** Community-owned, not venture capital owned
 
+Security and privacy are engineered, not promised: TLS 1.3, no prompt/response logging, VRAM-only processing, 90-day log retention. Full breakdown: [`docs/security.md`](docs/security.md)
+
 ---
 
 ## How It Works
@@ -108,18 +110,34 @@ Revenue covers operational costs. Any surplus is reinvested in expanding capacit
 
 ## What We Need From You
 
+Contributions are **donations to a nonprofit association, not equity** — no shares, no dividends. What you get instead: permanent discounts, a real voice in decisions, and full financial transparency. No minimum amount required; the tiers below are orientative.
+
 **€25 - €500: Early supporter**
 - Name on the public contributor list
-- Lifetime discount on the platform
+- Lifetime discount on the platform (10%)
+- 1 vote in the annual general assembly
 
 **€500 - €2,000: Founding member**
-- All of the above
+- All of the above (15% discount)
 - Voice in monthly community decisions
 - Priority access to new models
 
 **€2,000+: Stakeholder**
-- All of the above
-- Seat in governance
+- All of the above (25% discount)
+- Seat in the Community Council
+- Veto on major spending decisions
+
+Full tier details, FAQ, and refund policy: [`docs/investment-tiers.md`](docs/investment-tiers.md) · [`docs/investor-faq.md`](docs/investor-faq.md)
+
+---
+
+## Legal & Governance
+
+Sovereign AI is set up as a **nonprofit association in Spain**, not a company — no shares, no profit distribution, annual external audit required by law. The community governs itself through an annual General Assembly and a quarterly Community Council; the founder (Oscar Vinueza) keeps a protected minimum vote share and a veto limited to existential threats to the mission (selling to VCs, converting to for-profit) — a defensive power that cannot be used to change the project's core principles unilaterally.
+
+- Governance, voting rights, founder protections: [`docs/governance.md`](docs/governance.md)
+- Legal structure, taxes, IP: [`docs/legal-structure.md`](docs/legal-structure.md)
+- Budget, reporting, salaries: [`docs/financial-policy.md`](docs/financial-policy.md)
 
 ---
 
@@ -129,9 +147,11 @@ Revenue covers operational costs. Any surplus is reinvested in expanding capacit
 
 **Support without money:** Not ready to contribute financially but like the idea? [Sign the initiative](https://akiles94.github.io/sovereign-ai/sign.html) — your name and LinkedIn profile go on the public list of supporters.
 
-**GitHub:** Watch this repo for updates
+**GitHub:** [github.com/akiles94/sovereign-ai](https://github.com/akiles94/sovereign-ai) — watch this repo for updates, open issues with feedback
 
 **Discord:** [Link coming soon] — community discussions
+
+**Contact:** osvinueza94@gmail.com
 
 ---
 
@@ -143,6 +163,20 @@ Every euro raised is public:
 - Audited annually (required in Spain)
 
 No VC markup, no inflated executive pay. Just infrastructure costs plus fair, documented compensation for real work (development, operations, administration).
+
+---
+
+## Documentation
+
+| Topic | Doc |
+|---|---|
+| How to get involved (financial and non-financial) | [`docs/contribution-guide.md`](docs/contribution-guide.md) |
+| Investment tiers, full detail | [`docs/investment-tiers.md`](docs/investment-tiers.md) |
+| Investor FAQ | [`docs/investor-faq.md`](docs/investor-faq.md) |
+| Governance, voting, founder protections | [`docs/governance.md`](docs/governance.md) |
+| Legal structure, taxes, IP | [`docs/legal-structure.md`](docs/legal-structure.md) |
+| Financial policy, budget, reporting | [`docs/financial-policy.md`](docs/financial-policy.md) |
+| Security & privacy | [`docs/security.md`](docs/security.md) |
 
 ---
 
