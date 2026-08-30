@@ -12,7 +12,7 @@
 3. **Conciencia:** Escándalos de retención de datos en proveedores centralizados
 
 ### P: ¿Quién lo está haciendo?
-**R:** Óscar Viñueza (founder), con ayuda de la comunidad. Startup side-project (full-time day job también).
+**R:** Oscar Viñueza (founder), con ayuda de la comunidad. Startup side-project (full-time day job también).
 
 ---
 

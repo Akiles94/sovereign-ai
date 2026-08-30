@@ -1,22 +1,27 @@
 # Niveles de Inversión
 
+> **DISCLAIMER:** No hay inversión mínima requerida. Puedes donar cualquier cantidad (€1, €5, €10, etc.). Los rangos en cada tier son orientativos. Recibías beneficios prácticos según nivel, pero tu contribución de cualquier tamaño es valorada.
+
 ## Resumen Rápido
 
-| Tier | Rango | Beneficios Clave | Voto | Consejo |
+| Tier | Rango (orientativo) | Beneficios Clave | Voto | Consejo |
 |------|-------|------------------|------|--------|
-| **Early Supporter** | €25-€500 | Descuento 10%, lista pública | 1 voto | ❌ |
-| **Founding Member** | €500-€2,000 | Voz en decisiones, prioridad | 1 voto | ❌ |
+| **Early Supporter** | €25+ | Descuento 10%, lista pública | 1 voto | ❌ |
+| **Founding Member** | €500+ | Voz en decisiones, prioridad | 1 voto | ❌ |
 | **Stakeholder** | €2,000+ | Asiento en consejo, fine-tuning | 1 voto | ✅ |
 
 ---
 
-## Tier 1: Early Supporter (€25-€500)
+## Tier 1: Early Supporter (€25+)
+
+> **NOTA:** No hay mínimo. €25 es sugerencia, pero puedes donar €1, €5, €10, €15... lo que puedas.
 
 ### ¿Para quién?
 
 - Desarrolladores individuales
 - Pequeñas startups
 - Personas que creen en la misión
+- Cualquiera que quiera apoyar
 
 ### Qué Incluye
 
@@ -80,13 +85,16 @@ Bitcoin / Ethereum: [Dirección wallet TBD]
 
 ---
 
-## Tier 2: Founding Member (€500-€2,000)
+## Tier 2: Founding Member (€500+)
+
+> **NOTA:** No hay máximo en rango. Si contribuyes €500+, accedes a beneficios de Founding Member aunque sea €501 o €10,000.
 
 ### ¿Para quién?
 
 - Startups que planean usar IA intensivamente
 - Empresas con requisitos de compliance
 - Early adopters con recursos
+- Cualquiera que quiera voz en decisiones
 
 ### Qué Incluye
 

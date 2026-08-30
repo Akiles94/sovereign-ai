@@ -59,36 +59,31 @@
 
 ## Stack de Software
 
+> **DISCLAIMER:** Esta es una visión general de la arquitectura. Las tecnologías específicas serán seleccionadas minuciosamente en spikes técnicos cuando comience el desarrollo. Los detalles de implementación se decidirán basándose en benchmarks reales, requisitos operativos y aprendizajes comunitarios.
+
 ### Inferencia
 
-**Vllm**
-- **Propósito:** Servidor de inferencia optimizado para LLMs
-- **Ventajas:** 
-  - 10-20x throughput vs. PyTorch vanilla
-  - Paged attention (reduce memory)
-  - Dynamic batching
-- **Alternativa:** Ollama (más simple, menos flexible)
+Para servir modelos LLM de forma eficiente:
+- Stack optimizado para LLMs con throughput alto
+- Paged attention / memory optimization
+- Dynamic batching para múltiples requests
+- Alternativas evaluadas según performance
 
 ### API & Backend
 
-**FastAPI**
-- **Framework:** Web API moderno (Python)
-- **Ventajas:**
-  - Async/await nativo
-  - OpenAPI docs automático
-  - Validación con Pydantic
-- **Alternativas:** Flask (más simple), Rust (más rápido)
+Para exponer la infraestructura:
+- Framework HTTP moderno con async nativo
+- OpenAPI documentation automática
+- Validación de inputs robusta
+- Escalabilidad horizontal
 
 ### Orquestación
 
-**Kubernetes (k3s)**
-- **Propósito:** Gestionar pods, escalado horizontal
-- **Configuración:** Lightweight (k3s, no full k8s)
-- **Ventajas:**
-  - Industry standard
-  - Auto-healing
-  - Escalado declarativo
-- **Alternativa:** Docker Compose (más simple, menos robusto)
+Para gestionar infraestructura:
+- Sistema de orquestación ligero
+- Auto-healing y escalado automático
+- Declarativo y auditable
+- Community-friendly (no vendor lock-in)
 
 ### Monitoring
 

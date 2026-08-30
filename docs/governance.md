@@ -46,7 +46,7 @@ COMUNIDAD DE INVERSORES
   - Nombre en contributor list
   - Descuento lifetime en API (10%)
   - Acceso a Discord comunitario
-  - **Voto:** 1 voto en asamblea general (una persona = un voto)
+  - **Voto:** 1 voto en asamblea general
 
 ### **Tier 2: Founding Member (€500-€2,000)**
 - **Cantidad:** Max 50
@@ -65,7 +65,15 @@ COMUNIDAD DE INVERSORES
   - Veto en decisiones > €10k (raramente)
   - Acceso a financias detalladas
   - Fine-tuning gratuito 1x/año
-  - **Voto:** 1 voto + participación en consejo
+  - **Voto:** 1 voto + participación activa en consejo
+
+### **Founder: Oscar Viñueza**
+- **Derechos especiales:**
+  - Propuesta de decisiones (sin veto)
+  - **Voto ponderado:** 2 votos (double-weight en decisiones)
+  - Asiento permanente en Consejo (no rotatorio)
+  - Responsabilidad ejecutiva
+- **Razonamiento:** Iniciador del proyecto, full-time commitment, responsabilidad operativa
 
 ---
 
@@ -137,7 +145,7 @@ COMUNIDAD DE INVERSORES
 2. 3-5 días de debate
 3. Votación en Typeform o GitHub
 4. Resultado anunciado
-5. Implementación si aprobado (>50%)
+5. Implementación si aprobado (>50% + consensus)
 ```
 
 ### Votación Formal (Decisiones mayores)
@@ -145,17 +153,27 @@ COMUNIDAD DE INVERSORES
 1. RFC (Request for Comments) publicado en GitHub
 2. 1 semana de debate en issues/Discord
 3. Draft final refinado
-4. Votación en Open Collective o blockchain voting
+4. Votación en Open Collective o sistema seguro
 5. Escrow de fondos si es inversión de capital
 6. Implementación
 ```
 
-**Sistema de votación:**
-- Tier 1: 1 voto
-- Tier 2: 1 voto + 0.1 de peso
-- Tier 3: 1 voto + 0.5 de peso
+### Sistema de Pesos de Votación
 
-*Nota: Esto es flexible, puede ajustarse en Asamblea General si hay consenso de que es unfair.*
+| Tier | Votos | Peso | Ejemplo |
+|------|-------|------|---------|
+| Early Supporter | 1 voto | 1x | 1 voto = 1 punto |
+| Founding Member | 1 voto | 1x | 1 voto = 1 punto |
+| Stakeholder | 1 voto | 1x | 1 voto = 1 punto |
+| **Founder (Oscar)** | **1 voto** | **2x** | **1 voto = 2 puntos** |
+
+**Criterio:** El founder tiene doble peso debido a:
+- Iniciativa y responsabilidad ejecutiva
+- Full-time commitment desde inicio
+- Responsabilidad operativa del proyecto
+- Experiencia técnica y vision
+
+*Nota: Sistema flexible, puede ajustarse en Asamblea General si comunidad lo vota.*
 
 ---
 
@@ -196,6 +214,16 @@ COMUNIDAD DE INVERSORES
   - Términos de servicio
   - Auditoría legal
 - **Reuniones:** Monthly o as needed
+
+### 5. **Frontend & Apps**
+- **Líderes:** UX/Frontend engineer (cuando se contrate)
+- **Responsabilidades:**
+  - Dashboard de usuario
+  - Mobile apps (futura)
+  - UX/UI design
+  - Client SDKs
+  - Documentación de usuario
+- **Reuniones:** Bi-weekly (cuando hay development)
 
 ---
 

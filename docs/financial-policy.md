@@ -174,25 +174,28 @@ Timeline:
 
 ### Política General
 
-1. **Fundador:** Salario pequeño (€500/mes) + equity (50% votante)
-   - Justificación: Tiempo full-time equivalente
-   - Revisión: Anual o cuando revenue > €2k/mes
+1. **Fundador (Oscar Viñueza):**
+   - **Fase 1 (Pre-recaudación completa):** Sin salario (trabajo voluntary)
+   - **Fase 2 (Post-recaudación):** €500/mes (comenzará una vez se alcance objetivo de €30k)
+   - **Fase 3 (Retroactivo):** Si proyecto llega a rentabilidad, se pagará retroactivamente TODO el trabajo realizado (desde inicio) basado en:
+     - Horas de trabajo
+     - Responsabilidades acumuladas
+     - Complejidad de tareas
+     - Estándares de mercado para el rol
+   - **Criterio:** Sin ser "absurdamente alto" según rol/responsabilidades/colaboraciones, siempre preservando funcionamiento del proyecto
+   - **Governance:** Consejo aprueba retroactivamente cuando hay rentabilidad
 
-2. **Contractors:** €50-150/hora según expertize
+2. **Contractors/Colaboradores:** €50-150/hora según expertise
    - Pago: Facturas, 30 días máximo
+   - Aprobación: Presupuesto trimestral votado
 
 3. **Volunteers:** Opcionales
    - Reconocimiento público
    - Contribuciones valorizadas (disclosed en reporte)
 
-### Raise Criteria
+### Transparencia
 
-Salario puede aumentar si:
-- ✅ Revenue > Gastos (profitabilidad)
-- ✅ Consejo aprueba (>50% vote)
-- ✅ Transparencia: Aumento es público
-
-Máximo aconsejable: 2x salario inicial antes de Año 3.
+Todos los salarios/pagos son públicos en reportes mensuales. No hay secretos.
 
 ---
 

@@ -1,477 +1,231 @@
-# Guía de Contribuciones
+# Cómo Involucrarse / How to Get Involved
 
-Valoramos todas las formas de contribución. Esta guía te ayudará a participar.
-
----
-
-## Tipos de Contribuciones
-
-### 1. Código
-
-**Requisitos:**
-- Fork el repo
-- Crea branch: `feature/lo-que-hagas`
-- Commit con mensajes claros
-- Push y abre Pull Request
-
-**Áreas activas:**
-- `/api` - Backend FastAPI
-- `/orchestrator` - Kubernetes / inference
-- `/client` - SDK Python
-- `/docs` - Documentación
-
-**Procesos:**
-```bash
-git clone https://github.com/akiles94/sovereign-ai.git
-cd sovereign-ai
-git checkout -b feature/mi-feature
-
-# ... haz cambios ...
-
-git add .
-git commit -m "Agregar X feature"
-git push origin feature/mi-feature
-# Abre PR en GitHub
-```
-
-### 2. Documentación
-
-**Escribir o mejorar:**
-- `/docs` - Documentación pública
-- Código comments
-- Blog posts (en futuro)
-- Tutoriales
-
-**Proceso:**
-```bash
-# Editar archivo markdown
-vim docs/security.md
-
-# Commit
-git commit -m "Mejorar documentación de seguridad"
-git push origin feature/docs-security
-```
-
-### 3. Reportar Bugs
-
-**Crear GitHub Issue:**
-```
-Title: [BUG] Descripción breve del problema
-
-Body:
-## Descripción
-Qué pasó
-
-## Pasos para reproducir
-1. ...
-2. ...
-
-## Comportamiento esperado
-Qué debería pasar
-
-## Evidencia
-- Logs
-- Screenshots
-- Stack trace
-```
-
-### 4. Sugerir Features
-
-**GitHub Issue:**
-```
-Title: [FEATURE] Descripción de feature
-
-Body:
-## Problema
-Qué problema resuelve
-
-## Solución propuesta
-Cómo deberías resolverlo
-
-## Alternativas
-Otras formas de atacarlo
-
-## Contexto adicional
-```
-
-### 5. Investigación y Testing
-
-**Areas necesitadas:**
-- Security audits (non-invasive)
-- Performance benchmarks
-- Compliance testing
-- Edge cases discovery
-
-**Publicar resultados en GitHub Discussions.**
-
-### 6. Inversión Financiera
-
-Ver `/docs/investment-tiers.md` para cómo invertir.
-
-### 7. Comunidad
-
-**Moderación, soporte, etc:**
-- Responder preguntas en GitHub
-- Moderar Discord (cuando exista)
-- Organizar eventos
-- Escribir case studies
+En este momento, Sovereign AI está en **Fase 1: Fundación**. El proyecto aún no está en producción, pero ya puedes participar.
 
 ---
 
-## Proceso de PR (Pull Request)
+## 📌 Formas de Participar
 
-### 1. Prepara tu Cambio
+### 1. **Inversión / Donación** (AHORA DISPONIBLE)
 
-```bash
-# Update main
-git fetch origin
-git rebase origin/main
+**¿Qué es?** Contribuir económicamente para financiar el lanzamiento
+**Cómo:**
+- Via Open Collective: https://opencollective.com/sovereign-ai
+- Correo: osvinueza94@gmail.com (transferencia bancaria o crypto)
+- Rangos: Cualquier cantidad (sin mínimo)
 
-# Crea tu branch
-git checkout -b feature/x
-```
+**Beneficios:**
+- Descuento lifetime en API (10-25% según tier)
+- Nombre en lista pública de contribuidores
+- Participación en gobernanza (votaciones)
+- Acceso a Discord comunitario
+- Stakeholders: Asiento en Consejo
 
-### 2. Haz Cambios
+Ver `/docs/investment-tiers.md` para detalles completos.
 
-```bash
-# Edita archivos
-vim src/api.py
+### 2. **Feedback & Ideas** (AHORA DISPONIBLE)
 
-# Test localmente
-pytest
-flake8 src/
-mypy src/
-```
+**¿Qué es?** Aportar perspectiva sobre el proyecto
+**Cómo:**
+- GitHub Issues: Preguntas, suggestions, feedback
+- Email: osvinueza94@gmail.com
+- Discord: [Próximamente]
 
-### 3. Commit con Mensaje Claro
+**Ejemplo:**
+- "Creo que debería soportar fine-tuning desde Año 1, no Año 2"
+- "¿Cómo manejarán onboarding de usuarios enterprise?"
+- "Esta regulación podría afectarnos"
 
-```bash
-git commit -m "Agregar endpoint de billing
+### 3. **Testing & QA** (PRÓXIMAMENTE - Octubre 2026)
 
-- Calcula tokens consumidos por usuario
-- Retorna cost breakdown
-- Incluye descuentos aplicables
+**¿Qué es?** Ser early tester cuando lancemos beta cerrado
+**Quién puede:**
+- Inversores Tier 2+ (Founding Member)
+- Stakeholders
+- Seleccionados de comunidad
 
-Fixes #42"
-```
+**Qué implica:**
+- Testear API en ambiente controlado
+- Reportar bugs
+- Feedback de UX/performance
+- ~5 horas/semana durante 3 meses
 
-**Formato:**
-```
-<tipo>: <descripción corta>
+### 4. **Contribuciones Técnicas** (PRÓXIMAMENTE - 2027+)
 
-<descripción larga si es necesaria>
+**¿Qué es?** Código, documentación, infrastructure
+**Áreas:**
+- Backend API
+- Kubernetes orchestration
+- Frontend / Dashboard
+- SDK clients
+- Documentation
 
-Fixes #<issue-number> (si aplica)
-Co-authored-by: Nombre <email> (si colaboras)
-```
+**Cuándo:** Una vez tengamos codebase público y procesos establecidos
 
-### 4. Push y PR
+Ver `/docs/` para detalles de arquitectura.
 
-```bash
-git push origin feature/x
+### 5. **Community Building** (PRÓXIMAMENTE)
 
-# Abre PR en GitHub
-# - Titulo: "Agregar endpoint de billing"
-# - Description: Describe qué y por qué
-# - Link related issues
-```
-
-### 5. Responde Reviews
-
-Si revisor pide cambios:
-```bash
-# Haz cambios
-vim src/api.py
-
-# Commit adicional (no amend si ya está pushed)
-git commit -m "Address review: Add error handling"
-git push origin feature/x
-
-# Esperamos feedback
-```
-
-### 6. Merge
-
-Cuando aprobado:
-```bash
-# Maintainer merges en GitHub
-```
+**¿Qué es?** Ayudar a crecer y mantener la comunidad
+**Actividades:**
+- Moderation en Discord
+- Organizar eventos/meetups
+- Escribir blog posts / case studies
+- Traducción de documentos
+- Social media
 
 ---
 
-## Estándares de Código
+## 🚀 Timeline de Participación
 
-### Python
+### Ahora (Agosto 2026)
+✅ Inversión financiera
+✅ Feedback & ideas
+✅ Discusiones en GitHub
 
-**Formato:**
-```bash
-black src/       # Formateador automático
-flake8 src/      # Linting
-mypy src/        # Type checking
-```
+### Octubre 2026
+⏳ Closed beta testing (invitados)
+⏳ Primeros reportes de transparencia
+⏳ Community governance votes
 
-**Ejemplo correcto:**
-```python
-from typing import Optional
+### Enero 2027
+⏳ Beta pública (API disponible)
+⏳ Pruebas más intensivas
+⏳ Contribuciones técnicas comienzan
 
-def calculate_cost(tokens: int, discount: float = 0.0) -> float:
-    """Calculate API cost for tokens consumed.
-    
-    Args:
-        tokens: Number of tokens
-        discount: Discount percentage (0.0 - 1.0)
-    
-    Returns:
-        Cost in euros
-    """
-    base_price = 0.0000015  # €1.50 per M tokens
-    price = tokens * base_price
-    return price * (1 - discount)
-```
-
-### Documentación
-
-**Markdown:**
-```markdown
-# Título Principal
-
-## Subsección
-
-Párrafo con **bold** y *italic*.
-
-### Código
-
-\`\`\`python
-def example():
-    pass
-\`\`\`
-
-### Listas
-
-- Item 1
-- Item 2
-  - Sub-item
-```
+### 2027+
+⏳ Full development community
+⏳ Possibly distributed DAO governance
 
 ---
 
-## Testing
+## 💬 Canales de Comunicación
 
-### Unit Tests
+**Actualmente disponibles:**
+- GitHub Issues: https://github.com/akiles94/sovereign-ai/issues
+- Email: osvinueza94@gmail.com
+- GitHub Discussions: [TBD]
 
-```bash
-# Correr tests
-pytest
-
-# Con coverage
-pytest --cov=src/
-```
-
-**Ejemplo test:**
-```python
-from src.billing import calculate_cost
-
-def test_calculate_cost_no_discount():
-    cost = calculate_cost(1_000_000)
-    assert cost == pytest.approx(1.50)  # €1.50 per M tokens
-
-def test_calculate_cost_with_discount():
-    cost = calculate_cost(1_000_000, discount=0.15)
-    assert cost == pytest.approx(1.50 * 0.85)
-```
-
-### Integración Tests
-
-```bash
-# Test API end-to-end
-pytest tests/integration/
-```
+**Próximamente:**
+- Discord: [Link cuando sea live]
+- Twitter: [@akiles94]
+- Blog: Actualizaciones regulares
 
 ---
 
-## Licencias & IP
+## ❓ FAQ de Participación
 
-### Código
+**P: ¿Necesito invertir dinero para participar?**
+A: No. Puedes dar feedback, ideas, y más tarde código/testing sin invertir. El dinero acelera el proyecto, pero no es requerido.
 
-**License:** Apache 2.0 (propuesto, votado por comunidad)
+**P: ¿Cuándo puedo empezar a usar la API?**
+A: Closed beta (limitado): Octubre 2026. Público: Enero 2027.
 
-Contribuyendo, aceptas:
-- ✅ Tu código es open source
-- ✅ Otros pueden usarlo bajo Apache 2.0
-- ✅ Reconocimiento en CONTRIBUTORS.md
+**P: ¿Recibiré compensación por contributions?**
+A: No en Fase 1. Posiblemente en Fase 2+ si hay rentabilidad. Volunteers son reconocidos públicamente.
 
-### Documentación
+**P: ¿Se puede invertir anonimamente?**
+A: Sí, pero no estarás en lista pública de contribuidores.
 
-**License:** Creative Commons CC-BY 4.0
+**P: ¿Hay equity o ownership?**
+A: No. Es donación a asociación sin ánimo de lucro. Obtienes derechos de gobernanza, no acciones.
 
-**Significa:**
-- ✅ Público y remezclable
-- ✅ Debe creditar autor
-- ✅ No comercial sin permiso
-
-### Contributor Agreement
-
-Simple:
-```
-By submitting a pull request to this project,
-you agree that:
-
-1. Your contribution is your own original work
-2. You grant this project a perpetual license to use it
-3. You will not assert any IP claims
-```
-
-(Formal CLA vinculante: Año 2 si crecemos)
+**P: ¿Cómo empiezo?**
+A: 
+1. Si quieres invertir: Open Collective o email
+2. Si tienes ideas: GitHub issues
+3. Si quieres testing: Espera a Octubre, te contactaremos
+4. Si quieres código: Espera a 2027, procesos TBD
 
 ---
 
-## Comunidad & Code of Conduct
+## 🙏 Qué Buscamos
 
-### Esperamos
+### Inversores
+- Personas/empresas que valoren privacidad
+- Startups con requisitos de compliance
+- Visionarios que creen en soberanía tecnológica
+- Confianza > dinero (calidad > cantidad)
 
-✅ **Respeto:** A otros, a diferentes opiniones
-✅ **Claridad:** Comunicación honesta
-✅ **Inclusión:** Bienvenida a todxs
-✅ **Privacidad:** No revelar info sensible
+### Feedback
+- Critical thinking (¿qué podría salir mal?)
+- Domain expertise (legal, security, ops, etc.)
+- Real-world perspective (¿esto es viable?)
 
-### No toleramos
+### Testers
+- Usuarios que puedan comprobar cosas sistemáticamente
+- Reporte detallado de bugs
+- Paciencia (esto es beta)
 
-❌ Harassment, discrimination
-❌ Spam, trolling
-❌ Intentos de hijack / sabotaje
-❌ Compartir credentials/secrets
-
-**Violaciones:** Warning → Ban de comunidad
-
----
-
-## Roadmap de Contribuciones
-
-### Áreas Prioritarias (Año 1)
-
-1. **API Stability** (Crítico)
-   - Bug fixes
-   - Performance improvements
-   - Error handling
-
-2. **Documentation** (Importante)
-   - API docs
-   - Deployment guide
-   - Security best practices
-
-3. **Testing** (Importante)
-   - Unit tests
-   - Integration tests
-   - Load testing
-
-### Áreas Futuras (Año 2+)
-
-- Modelos especializados
-- Fine-tuning infrastructure
-- Integrations con herramientas populares
-- Frontend dashboard
-- Mobile SDK
+### Contributors
+- Excelencia técnica
+- Alineamiento con valores (privacidad, transparencia)
+- Colabs de largo plazo
 
 ---
 
-## Contacto para Colaboradores
+## 📖 Documentación Relacionada
 
-**¿Preguntas sobre contribuciones?**
-
-- GitHub Issues: Preguntas técnicas públicas
-- Email: osvinueza94@gmail.com (preguntas privadas)
-- Discord: #contributors (cuando sea live)
-
-**Mentorship:**
-Si quieres apoyo en tu primera contribución:
-- Email con "First-time contributor" en subject
-- Happy to pair program / review extensively
+- `/docs/vision.md` - Propósito del proyecto
+- `/docs/roadmap.md` - Qué viene cuando
+- `/docs/investment-tiers.md` - Detalles de inversión
+- `/docs/governance.md` - Cómo se toman decisiones
 
 ---
 
-## Reconocimiento
+**¿Listo para participar?**
 
-### CONTRIBUTORS.md
-
-Todos los contribuidores listados públicamente (si lo desean).
-
-```markdown
-# Contributors
-
-Agradecemos a:
-
-## Code
-- @github-user-1 - Feature X
-- @github-user-2 - Bug fix Y
-
-## Documentation
-- Jane Doe - Security guide
-
-## Community
-- Alex - Community moderation
-
-## Investors
-- Acme Corp (Founding Member)
-- [+47 más en investment page]
-```
-
-### Badges & Roles
-
-Posibles en futuro (Año 2+):
-- Maintainer (core contributor)
-- Reviewer (code review)
-- Community Champion (engagement)
-
----
-
-## Ejemplos de Contribuciones
-
-### Ejemplo 1: Bug Fix Pequeño
-
-```
-1. Encuentras error en handling de rate limits
-2. Creas issue (o linkea PR a issue existente)
-3. Arreglas en local: vim src/api/ratelimit.py
-4. Escribes test: tests/test_ratelimit.py
-5. Commit: "Fix: Rate limit header parsing"
-6. Push y abre PR
-7. Revisor sugiere mejoría, haces change
-8. Aprobado y merged
-9. Tu nombre en CONTRIBUTORS.md
-```
-
-### Ejemplo 2: Documentación Grande
-
-```
-1. Propones: "Falta documentación de deployment"
-2. Discussion en GitHub (¿qué incluir?)
-3. Escribes: docs/deployment-guide.md (1000+ words)
-4. Incluye: Prerequisites, step-by-step, troubleshooting
-5. PR con ejemplos
-6. Revisor sugiere clarificaciones
-7. Updates y aprobado
-8. Featured en documentación pública
-```
-
-### Ejemplo 3: Inversión + Consejo
-
-```
-1. Inviertes como Founding Member (€1000)
-2. Participas en Discord activamente
-3. Sugieres mejoras en governance
-4. Eventualmente: Promovido a Stakeholder
-5. Asiento en Consejo Comunitario
-6. Voz real en decisiones del proyecto
-```
-
----
-
-## Gracias
-
-**Cada contribución, sin importar tamaño, es valorada.**
-
-Juntos estamos construyendo IA privada que la gente realmente controla.
+🎯 Invierte o dona: https://opencollective.com/sovereign-ai
+📧 Contacta: osvinueza94@gmail.com
+💭 Feedback: GitHub Issues
 
 ---
 
 **Última actualización:** Agosto 2026
+
+---
+
+# English Version
+
+## How to Get Involved
+
+Sovereign AI is currently in **Phase 1: Foundation**. The project is not yet in production, but you can already participate.
+
+### Ways to Participate
+
+#### 1. **Investment / Donation** (AVAILABLE NOW)
+- What: Contribute financially to fund launch
+- How: Open Collective or email
+- Range: Any amount (no minimum)
+- Benefits: Lifetime API discount, governance vote, public listing
+
+#### 2. **Feedback & Ideas** (AVAILABLE NOW)
+- GitHub Issues, email, or Discord
+- Share perspectives on architecture, roadmap, risks
+
+#### 3. **Testing & QA** (COMING October 2026)
+- Early access to beta for Founding Members+
+- Report bugs, test features, UX feedback
+
+#### 4. **Technical Contributions** (COMING 2027)
+- Backend, infrastructure, frontend, SDKs
+- Once codebase is public
+
+#### 5. **Community Building** (COMING 2027)
+- Moderation, events, content, translations
+
+### Current Channels
+- GitHub: https://github.com/akiles94/sovereign-ai
+- Email: osvinueza94@gmail.com
+
+### FAQ
+- **Do I need to invest?** No, but it helps.
+- **When can I use the API?** October 2026 (beta), January 2027 (public).
+- **Will I get equity?** No, but governance rights.
+- **How do I start?** GitHub issues or email.
+
+---
+
+**Ready to join?** 🚀
+- Donate: https://opencollective.com/sovereign-ai
+- Contact: osvinueza94@gmail.com
