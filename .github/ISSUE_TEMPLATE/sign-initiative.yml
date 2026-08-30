@@ -1,0 +1,39 @@
+name: "🤝 Firmar la iniciativa"
+description: "Muestra tu apoyo a Sovereign AI sin necesidad de contribuir económicamente"
+title: "[Firma] "
+labels: ["signature"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Gracias por apoyar Sovereign AI. Rellena estos datos y un mantenedor revisará tu firma antes de publicarla en la lista pública de firmantes.
+  - type: input
+    id: name
+    attributes:
+      label: Nombre completo
+      description: Cómo quieres aparecer en la lista pública de firmantes
+      placeholder: "Jane Doe"
+    validations:
+      required: true
+  - type: input
+    id: linkedin
+    attributes:
+      label: URL de tu perfil de LinkedIn
+      description: Debe ser una URL pública de linkedin.com/in/...
+      placeholder: "https://www.linkedin.com/in/janedoe"
+    validations:
+      required: true
+  - type: textarea
+    id: message
+    attributes:
+      label: Mensaje de apoyo (opcional)
+      description: Una frase corta sobre por qué apoyas la iniciativa
+    validations:
+      required: false
+  - type: checkboxes
+    id: consent
+    attributes:
+      label: Consentimiento
+      options:
+        - label: Autorizo a que mi nombre y el enlace a mi perfil de LinkedIn se publiquen en la página pública de firmantes de Sovereign AI
+          required: true
